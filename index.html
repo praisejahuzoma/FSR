@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>Field Service Record</title>
+ </head>
+<body>
+  <div id="container">
+    <h1>Field Service Record</h1>
+
+    <div>
+      <label for="date">Date:</label>
+      <input type="date" id="date">
+    </div>
+    <div>
+      <label for="returnVisit">Return Visit:</label>
+      <input type="number" id="returnVisit">
+    </div>
+    <div>
+      <label for="bibleStudy">Bible Study:</label>
+      <input type="number" id="bibleStudy">
+    </div>
+    <div>
+      <label for="hour">Hour:</label>
+      <input type="number" id="hour">
+    </div>
+    <div>
+      <label for="books">Books:</label>
+      <input type="number" id="books">
+    </div>
+    <div>
+      <label for="videos">Videos:</label>
+      <input type="number" id="videos">
+    </div>
+    <div>
+       <button onclick="addRecord()">Add Record</button>
+    </div>
+
+    <ul id="recordList"></ul>
+
+    <div class="totals">
+       <h2>Monthly Summary</h2>
+       <p>Total Hours: <span id="totalHours">0</span></p>
+       <p>Total Videos: <span id="totalVideos">0</span></p>
+       <p>Total Return Visit: <span id="totalReturnVisit">0</span></p>
+       <p>Total Bible Study: <span id="totalBibleStudy">0</span></p>
+       <p>Total Books: <span id="totalBooks">0</span></p>
+    </div>
+ </div>
+
+<script src="main.js"></script>
+</body>
+</html>
