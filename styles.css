@@ -35,13 +35,15 @@ body {
   }
   button {
     display: block;
-    width: 30%;
+    width: 20%;
     padding: 10px;
     background-color: #39c1fb;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   button:hover {
     background-color: #3dc3f3;
@@ -49,6 +51,7 @@ body {
   ul {
     list-style-type: none;
     padding: 0;
+    width: 300%;
   }
   li {
     display: flex;
@@ -56,6 +59,7 @@ body {
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 10px; /* Add margin between list items */
   }
   .totals {
     background-color: #f9f9f9;
@@ -63,3 +67,37 @@ body {
     border-radius: 5px;
     margin-top: 20px;
   }
+  
+#recordList {
+  width: 100%;
+  margin-right: 300px;
+}
+/* Add your custom CSS styles here */
+.householder-section {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group label,
+.input-group input {
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}

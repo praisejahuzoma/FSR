@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles.css">
-   <title>Field Service Record</title>
- </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Field Service Record</title>
+</head>
 <body>
   <div id="container">
     <h1>Field Service Record</h1>
 
+    <!-- Input fields for adding a record -->
     <div>
       <label for="date">Date:</label>
       <input type="date" id="date">
@@ -34,22 +36,56 @@
       <label for="videos">Videos:</label>
       <input type="number" id="videos">
     </div>
+
+    <!-- Additional input fields for address and householder information -->
+    <div class="householder-section">
+      <h2>Householder Information:</h2>
+      <div class="input-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+      </div>
+      <div class="input-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+      </div>
+      <div class="input-group">
+        <label for="book">Book Given:</label>
+        <input type="text" id="book">
+      </div>
+    </div>
+
+    <!-- Buttons for adding a record and getting current location -->
     <div>
-       <button onclick="addRecord()">Add Record</button>
+      <button id="getCurrentLocationButton">Get Current Location</button>
+      <button id="addRecordButton">Add Record</button>
     </div>
 
+    <!-- List for displaying records -->
     <ul id="recordList"></ul>
-
+    
+    <!-- Monthly summary totals -->
     <div class="totals">
-       <h2>Monthly Summary</h2>
-       <p>Total Hours: <span id="totalHours">0</span></p>
-       <p>Total Videos: <span id="totalVideos">0</span></p>
-       <p>Total Return Visit: <span id="totalReturnVisit">0</span></p>
-       <p>Total Bible Study: <span id="totalBibleStudy">0</span></p>
-       <p>Total Books: <span id="totalBooks">0</span></p>
+      <h2>Monthly Summary</h2>
+      <p>Total Hours: <span id="totalHours">0</span></p>
+      <p>Total Videos: <span id="totalVideos">0</span></p>
+      <p>Total Return Visit: <span id="totalReturnVisit">0</span></p>
+      <p>Total Bible Study: <span id="totalBibleStudy">0</span></p>
+      <p>Total Books: <span id="totalBooks">0</span></p>
     </div>
- </div>
 
-<script src="main.js"></script>
+    <!-- Button for getting address -->
+    <div>
+      <button id="getAddressButton">Get Address</button>
+    </div>
+    
+    <!-- Map container -->
+    <div id="mapContainer">
+      <div id="map" style="width: 100%; height: 400px;"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
