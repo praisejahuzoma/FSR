@@ -1,103 +1,145 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  #container {
-    width: 95%;
-    max-width: 900px; /* Adjust the max-width as needed */
-    padding: 120px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  input[type="date"],
-  input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  button {
-    display: block;
-    width: 20%;
-    padding: 10px;
-    background-color: #39c1fb;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  button:hover {
-    background-color: #3dc3f3;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-    width: 300%;
-  }
-  li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px; /* Add margin between list items */
-  }
-  .totals {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#container {
+  width: 90%;
+  max-width: 800px; /* Adjust the max-width as needed */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 30%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.totals {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 #recordList {
   width: 100%;
-  margin-right: 300px;
 }
-/* Add your custom CSS styles here */
+
 .householder-section {
   margin-top: 20px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.householder-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .input-group {
   margin-bottom: 10px;
 }
 
-.label {
+.input-group label {
   display: block;
-  font-weight: bold;
   margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
 }
 
-.input-group label,
-.input-group input {
-  display: block;
-}
-
-.input-group input {
+.input-group input[type="text"] {
   width: 100%;
-  padding: 5px;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 3px;
+}
+
+#mapContainer {
+  margin-top: 20px;
+}
+
+/* Add your custom CSS styles here */
+/* ... previous styles ... */
+
+ul#recordList {
+  padding: 0;
+}
+
+ul#recordList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px; /* Adjust this value to increase or decrease the space between items */
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+/* ... remaining styles ... */
+ul#recordList li span {
+  margin-bottom: 5px; /* Add spacing between spans */
 }

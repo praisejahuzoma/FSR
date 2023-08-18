@@ -12,27 +12,17 @@
     <h1>Field Service Record</h1>
 
     <!-- Input fields for adding a record -->
-    <div>
+    <div class="input-section">
       <label for="date">Date:</label>
       <input type="date" id="date">
-    </div>
-    <div>
       <label for="returnVisit">Return Visit:</label>
       <input type="number" id="returnVisit">
-    </div>
-    <div>
       <label for="bibleStudy">Bible Study:</label>
       <input type="number" id="bibleStudy">
-    </div>
-    <div>
       <label for="hour">Hour:</label>
       <input type="number" id="hour">
-    </div>
-    <div>
       <label for="books">Books:</label>
       <input type="number" id="books">
-    </div>
-    <div>
       <label for="videos">Videos:</label>
       <input type="number" id="videos">
     </div>
@@ -55,13 +45,14 @@
     </div>
 
     <!-- Buttons for adding a record and getting current location -->
-    <div>
+    <div class="button-section">
       <button id="getCurrentLocationButton">Get Current Location</button>
       <button id="addRecordButton">Add Record</button>
     </div>
 
     <!-- List for displaying records -->
     <ul id="recordList"></ul>
+    <ul id="householderList"></ul>
     
     <!-- Monthly summary totals -->
     <div class="totals">
@@ -74,7 +65,7 @@
     </div>
 
     <!-- Button for getting address -->
-    <div>
+    <div class="button-section">
       <button id="getAddressButton">Get Address</button>
     </div>
     
@@ -87,5 +78,6 @@
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="main.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
