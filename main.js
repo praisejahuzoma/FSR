@@ -127,7 +127,6 @@ function loadLocalStorage() {
     loadRecords(); // Update the UI with loaded records
   }
 }
-
 // Call this function when the page loads
 loadLocalStorage();
 
@@ -195,6 +194,8 @@ function updateTotals() {
   totalBooksElement.textContent = totalBooks;
 }
 
+
+
 function addRecord() {
   const date = document.getElementById("date").value;
   const returnVisit = parseFloat(document.getElementById("returnVisit").value) || 0;
@@ -239,7 +240,8 @@ function addRecord() {
 
   // Add the new record to the server
  
- 
+  updateLocalStorage();
+
 }
 
 // Add event listener to the Add Record button
