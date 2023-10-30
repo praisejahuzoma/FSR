@@ -87,18 +87,40 @@ button{
 }
 .record-list li {
   display: flex;
+  gap: 15px;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
   background-color: #f7f7f7;
   border-radius: 5px;
+  max-height: 90px; /* Set your desired maximum height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
+
+@media screen and (max-width: 750px) {
+  .record-list li {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  max-height: 120px; /* Set your desired maximum height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+}
+
 .record-list {
   margin: 0;
   padding: 0;
 }
+
 .totals {
   background-color: #f9f9f9;
   padding: 70px;
@@ -114,21 +136,6 @@ button{
   border-radius: 5px;
 }
 
-
 .delete-button{
   width: 70px;
 }
-@media screen and (max-width: 480px) {
-  input[type="number"],
-  input[type="text"],
-  input[type="date"],
-  button {
-    font-size: 14px;
-  }
-
-  .button-section button {
-    width: 10%;
-  }
-}
-
-/* Add any additional custom styles here */
